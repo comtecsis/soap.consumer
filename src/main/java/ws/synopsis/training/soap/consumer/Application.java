@@ -9,19 +9,10 @@ import pe.com.synopsis.client.soap.WsCountryClient;
 import ws.synopsis.training.soap.consumer.config.WsConfig;
 
 @SpringBootApplication
-public class Application implements CommandLineRunner {
-
-	@Autowired
-	private WsCountryClient client;
+public class Application {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Application.class, args);
 	}
 
-	@Override
-	public void run(String... args) throws Exception {
-		String name = "Spain";
-		GetCountryResponse response = client.getCountry(name);
-		System.out.println(response.getCountry().getCapital());
-	}
 }
