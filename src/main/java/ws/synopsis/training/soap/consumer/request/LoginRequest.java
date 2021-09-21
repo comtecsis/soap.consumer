@@ -10,4 +10,5 @@ import lombok.NoArgsConstructor;
 public class LoginRequest {
     private String numberDocument;
     private String word;
+    private String version;
 }

@@ -9,6 +9,7 @@ public enum TrainingStatusEnum {
 
     OK("0000", "Ejecutado exitosamente.")
     , ERROR_GENERIC("9000", "Error inesperado.")
+    , ERROR_UNAUTHENTICATED("9003", "No esta authenticado.")
     , ERROR_CLIENT_EXIST("9001", "Cliente ya esta registrado.")
     , ERROR_CLIENT_NOT_EXIST("9002", "Cliente no esta registrado.");
 

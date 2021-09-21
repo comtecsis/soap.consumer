@@ -30,12 +30,12 @@ public class RepositoryData implements ApplicationListener<ApplicationReadyEvent
     private void sendDatabase() {
 
         // DNI
-        clientRepository.save(Client.builder().name("Client Uno").typeDocument("DNI").numberDocument("12345678").word("12345678").build());
-        clientRepository.save(Client.builder().name("Client Dos").typeDocument("DNI").numberDocument("12345689").word("12345678").build());
-        clientRepository.save(Client.builder().name("Client Tres").typeDocument("DNI").numberDocument("12345690").word("12345678").build());
-        clientRepository.save(Client.builder().name("Client Cuatro").typeDocument("DNI").numberDocument("12345691").word("12345678").build());
-        clientRepository.save(Client.builder().name("Client Cinco").typeDocument("CE").numberDocument("12345689111").word("12345678").build());
-        clientRepository.save(Client.builder().name("Client Seis").typeDocument("CE").numberDocument("12345689222").word("12345678").build());
+        clientRepository.save(Client.builder().name("Client Uno").typeDocument("DNI").numberDocument("12345678").word("12345678").role("ADMIN").build());
+        clientRepository.save(Client.builder().name("Client Dos").typeDocument("DNI").numberDocument("12345689").word("12345678").role("ADMIN").build());
+        clientRepository.save(Client.builder().name("Client Tres").typeDocument("DNI").numberDocument("12345690").word("12345678").role("ADMIN").build());
+        clientRepository.save(Client.builder().name("Client Cuatro").typeDocument("DNI").numberDocument("12345691").word("12345678").role("ADMIN").build());
+        clientRepository.save(Client.builder().name("Client Cinco").typeDocument("CE").numberDocument("12345689111").word("12345678").role("ADMIN").build());
+        clientRepository.save(Client.builder().name("Client Seis").typeDocument("CE").numberDocument("12345689222").word("12345678").role("ADMIN").build());
 
     }
 
